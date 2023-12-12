@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Mazen">
+	<title>Registeration Page</title>
+
+	<style>
+		body {
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		}
+
+		.logo {
+			padding: 0px 20px;
+		}
+
+		.title {
+			margin-top: 0%;
+		}
+
+		hr {
+			border: 1px solid #f1f1f1;
+			margin-bottom: 25px;
+		}
+
+		input {
+			width: 100%;
+			padding: 10px 20px;
+		}
+
+		input:focus {
+			background-color: rgb(231, 231, 231);
+		}
+
+		button {
+			background-color: #1fb257;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			opacity: 0.7;
+		}
+
+		button:hover {
+			opacity: 1;
+		}
+
+		.cancel,
+		.register {
+			width: 50%;
+			float: right;
+		}
+
+		.form-container {
+			padding: 10px;
+			margin: 20px;
+		}
+
+		.cancel {
+			background-color: rgba(213, 38, 38, 0.741);
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="logo">
+		<a href="index.html">
+			<img src="https://gravatar.com/userimage/159380727/6458ea739516812183a65cbfe2702de1.jpeg" alt="My Logo">
+		</a>
+	</nav>
+
+	<form class="signup-form">
+		<div class="form-container">
+			<h1 class="title">Registration Page</h1>
+			<hr>
+
+			<label for="email"><b>Email</b></label>
+			<input type="email" placeholder="example@example.com" name="email" required><br>
+
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="John Doe" name="username" required><br>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required><br>
+
+			<label for="confirm-pass"><b>Confirm Password</b></label>
+			<input type="password" placeholder="Confirm Password" name="confirm-pass" required><br>
+
+			<button type="button" class="cancel">Cancel</button>
+			<button type="submit" class="register">Register</button>
+		</div>
+	</form>
+</body>
+
+</html>
